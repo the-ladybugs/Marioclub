@@ -112,7 +112,7 @@ form input {
   font-size: 24px;
   border-radius: 28px;
   border: 4px solid white;
-  width: 25%;
+  width: auto;
 }
 
 footer {
@@ -157,4 +157,57 @@ p::selection {
 
 p::after {
   content: "...";
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1400px) {
+  .banner .welcome h2 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .banner .welcome h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .banner .welcome {
+    position: relative;
+    text-align: center;
+  }
+  .banner .welcome br {
+    display: none;
+  }
+  .banner .welcome h2 {
+    font-size: 35px;
+  }
+  .banner .welcome h2 span {
+    font-size: 1em;
+  }
+
+  .images li {
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  nav li {
+    font-size: 20px;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    text-align: center;
+  }
+  header {
+    position: relative;
+  }
+  nav {
+    top: 0;
+  }
 }
